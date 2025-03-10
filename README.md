@@ -18,13 +18,19 @@ Benutzer können folgende Inhalte exportieren:
 | Microsoft Teams | ChannelMessage.Read.All | - Kanal-Nachrichten<br>- Thread-Antworten<br>- Nachrichtenmetadaten | Export von Kanal-Konversationen |
 | SharePoint Online | Files.ReadWrite.All | - Dateianhänge<br>- Datei-Metadaten | Speicherung von Chat-Anhängen |
 | OneDrive for Business | Files.ReadWrite | - Export-Dateien<br>- Ordnerstrukturen | Speicherung der HTML-Exporte |
-| Azure AD | User.Read | - Benutzerprofile<br>- E-Mail-Adressen<br>- Display Names | Benutzeridentifikation |
+| Office 365 Users | User.Read.All | - Benutzerprofile<br>- E-Mail-Adressen<br>- Display Names | Benutzeridentifikation |
 
 ## Komponenten
 
 Die Lösung besteht aus zwei Workflows:
 1. Chat-Export Workflow (`TeamsExporter-Chatexportieren`)
 2. Kanal-Export Workflow (`TeamsExporter-Kanalchatexportieren`) 
+
+### Erforderliche Konnektoren
+- Microsoft Teams
+- SharePoint Online
+- OneDrive for Business
+- Office 365 Users
 
 ## Workflow 1: Chat-Export
 
@@ -95,7 +101,21 @@ Die Lösung besteht aus zwei Workflows:
 
 ## Technische Details
 
-### Dateistruktur 
+### Dateistruktur
+```
+TeamsChatExport/  
+├── YYYY-MM-DD - Chatname/  
+│ ├── Export-YYYY-MM-DD.html # Interaktive HTML-Exportdatei
+│ └── Dateien/ # Ordner für Chat-Anhänge
+│ ├── dokument1.docx
+│ ├── bild.jpg
+│ └── ...
+└── YYYY-MM-DD - Teamname/ # Bei Kanal-Exporten
+├── Export-YYYY-MM-DD.html # Export des Kanal-Threads
+└── Dateien/
+├── anhang1.pdf
+└── ...
+```
 
 ## Ressourcen & Weiterführende Informationen
 
