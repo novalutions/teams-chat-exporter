@@ -297,7 +297,7 @@ Der Teams Chat Exporter wird als Einmallizenz ohne laufende Kosten angeboten:
 
 | Edition | Aktive Konten | Enthaltene Leistungen |
 |---|---|---|
-| S | 1–50 | 15 Minuten Installationssupport |
+| S | 1–49 | 15 Minuten Installationssupport |
 | L | 50–250 | 15 Minuten Installationssupport |
 | Enterprise | ab 250 | 60 Minuten Installationssupport (remote), Support-Postfach, regelmäßige Updates |
 

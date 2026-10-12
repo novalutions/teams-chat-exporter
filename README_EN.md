@@ -297,7 +297,7 @@ Teams Chat Exporter is offered as a one-time license with no recurring costs:
 
 | Edition | Active accounts | Included services |
 |---|---|---|
-| S | 1–50 | 15 minutes of installation support |
+| S | 1–49 | 15 minutes of installation support |
 | L | 50–250 | 15 minutes of installation support |
 | Enterprise | 250+ | 60 minutes of installation support (remote), support mailbox, regular updates |
 
